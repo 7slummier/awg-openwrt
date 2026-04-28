@@ -2,13 +2,13 @@ include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=kmod-amneziawg
-PKG_VERSION:=1.0.20260210
+PKG_VERSION:=1.0.20260329
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/7slummier/amneziawg-linux-kernel-module.git
 # Branch with NULL_CIPHER option
-PKG_SOURCE_VERSION:=main
+PKG_SOURCE_VERSION:=v$(PKG_VERSION)-nullcipher
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 MAKE_PATH:=src
 
